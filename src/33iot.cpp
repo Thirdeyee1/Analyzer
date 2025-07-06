@@ -56,6 +56,7 @@ void loop() {
     if (sampleIndex == numSamples) {
       float sumSq = 0, maxVal = magBuffer[0], minVal = magBuffer[0];
       for (int i = 0; i < numSamples; i++) {
+        
         float v = magBuffer[i];
         sumSq += v * v;
         if (v > maxVal) maxVal = v;
